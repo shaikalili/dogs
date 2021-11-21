@@ -1,0 +1,24 @@
+.list {
+    margin: 5vh;
+    width: 50vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tittle {
+    width: 30%;
+    margin-bottom: 10px;
+    border-bottom: 0.5vh solid black;
+    font-family: 'Vollkorn', serif;
+}
+
+.card-title {
+    font-family: 'Vollkorn', serif;
+}
+
+.card-body {
+    cursor: pointer;
+}
+
+.card-body:hover {
+    background-color: rgba(167, 176, 185, 0.952);
+}

@@ -1,0 +1,19 @@
+<div class="center">
+    <mat-drawer-container class="example-container">
+        <mat-drawer #signIn class="example-sidenav" mode="side">
+            <app-log-in></app-log-in>
+        </mat-drawer>
+        <mat-drawer #signUp class="example-sidenav" mode="side">
+            <app-register></app-register>
+        </mat-drawer>
+
+        <div class="example-sidenav-content">
+            <button type="button" mat-button (click)="signIn.toggle()&&signUp.close()">
+        already registered? <b>Sign-In</b>
+      </button>
+            <button type="button" mat-button (click)="signUp.toggle()&&signIn.close()">
+        <b>Sign-Up</b>
+      </button>
+        </div>
+    </mat-drawer-container>
+</div>

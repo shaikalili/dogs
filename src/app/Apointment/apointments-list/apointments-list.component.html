@@ -1,0 +1,9 @@
+<div class="container list">
+    <div class="tittle">Upcomings Apointments</div>
+    <div class="card w-75" *ngFor="let apointment of apointments;">
+        <div class="card-body" (click)="selectedApointment(apointment)">
+            <h4 class="card-title">{{apointment.nameOfDogOwner}}</h4>
+            <p class="card-text"> <b> Apointment Date:</b> {{apointment.timeOfApoitment}}</p>
+        </div>
+    </div>
+</div>
